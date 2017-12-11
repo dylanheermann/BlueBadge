@@ -26,5 +26,12 @@ namespace RMS.WebMvc.Controllers
 
             return View();
         }
+
+        public ActionResult Archives()
+        {
+            ViewBag.Message = "Where all the music is stored.";
+
+            return View();
+        }
     }
 }
