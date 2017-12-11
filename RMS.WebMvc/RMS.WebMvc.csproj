@@ -193,6 +193,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\SongController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -262,6 +263,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Archives.cshtml" />
+    <Content Include="Views\Song\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -283,6 +285,14 @@
     <ProjectReference Include="..\RMS.Data\RMS.Data.csproj">
       <Project>{e21e2ac7-202d-4382-b898-6d543aee0faa}</Project>
       <Name>RMS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMS.Models\RMS.Models.csproj">
+      <Project>{002F5608-238D-4CC7-8E28-875489D24D56}</Project>
+      <Name>RMS.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMS.Services\RMS.Services.csproj">
+      <Project>{704E3A34-2CA6-4402-B2CD-F5A223B53ABC}</Project>
+      <Name>RMS.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
