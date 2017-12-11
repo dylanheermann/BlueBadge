@@ -17,6 +17,7 @@ namespace RMS.Models
 
         [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
+        public string Link { get; set; }
 
         public override string ToString() => $"[{SongId}] {Title}";
     }

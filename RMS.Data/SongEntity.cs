@@ -21,6 +21,7 @@ namespace RMS.Data
         public string Description { get; set; }
         public string SongName { get; set; }
         public string Content { get; set; }
+        public string Link { get; set; }
 
         [Required]
         public DateTimeOffset CreatedUtc { get; set; }

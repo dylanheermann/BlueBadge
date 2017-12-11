@@ -26,7 +26,8 @@ namespace RMS.Services
                     OwnerId = _userId,
                     Title = model.Title,
                     Content = model.Content,
-                    CreatedUtc = DateTimeOffset.Now
+                    CreatedUtc = DateTimeOffset.Now,
+                    Link = model.Link
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -52,7 +53,8 @@ namespace RMS.Services
                                     SongId = e.SongId,
                                     Title = e.Title,
                                     Content = e.Content,
-                                    CreatedUtc = e.CreatedUtc
+                                    CreatedUtc = e.CreatedUtc,
+                                    Link = e.Link
                                 }
                         );
                 return query.ToArray();
@@ -75,7 +77,8 @@ namespace RMS.Services
                         Title = entity.Title,
                         Content = entity.Content,
                         CreatedUtc = entity.CreatedUtc,
-                        ModifiedUtc = entity.ModifiedUtc
+                        ModifiedUtc = entity.ModifiedUtc,
+                        Link = entity.Link,
                     };
             }
         }
@@ -92,6 +95,7 @@ namespace RMS.Services
                 entity.Title = model.Title;
                 entity.Content = model.Content;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
+                entity.Link = model.Link;
 
                 return ctx.SaveChanges() == 1;
             }
