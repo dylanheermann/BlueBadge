@@ -34,6 +34,12 @@ namespace RMS.WebMvc.Controllers
             return View();
         }
 
-    
+        public ActionResult Songs()
+        {
+            ViewBag.Message = "Songs functions";
+
+            return View();
+        }
+
     }
 }
