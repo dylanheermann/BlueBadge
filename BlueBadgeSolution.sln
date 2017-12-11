@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBadgeSolution", "BlueBadgeSolution\BlueBadgeSolution.csproj", "{A5BCE67E-3A98-45BB-A82D-73AFCDDD6A75}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.Services", "RMS.Services\RMS.Services.csproj", "{704E3A34-2CA6-4402-B2CD-F5A223B53ABC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.Models", "RMS.Models\RMS.Models.csproj", "{002F5608-238D-4CC7-8E28-875489D24D56}"
@@ -13,16 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.Data", "RMS.Data\RMS.Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.Contracts", "RMS.Contracts\RMS.Contracts.csproj", "{FE6FDC2C-23B2-46B2-A84A-829CD0A87C80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.WebMvc", "RMS.WebMvc\RMS.WebMvc.csproj", "{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5BCE67E-3A98-45BB-A82D-73AFCDDD6A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5BCE67E-3A98-45BB-A82D-73AFCDDD6A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5BCE67E-3A98-45BB-A82D-73AFCDDD6A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5BCE67E-3A98-45BB-A82D-73AFCDDD6A75}.Release|Any CPU.Build.0 = Release|Any CPU
 		{704E3A34-2CA6-4402-B2CD-F5A223B53ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{704E3A34-2CA6-4402-B2CD-F5A223B53ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{704E3A34-2CA6-4402-B2CD-F5A223B53ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{FE6FDC2C-23B2-46B2-A84A-829CD0A87C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE6FDC2C-23B2-46B2-A84A-829CD0A87C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE6FDC2C-23B2-46B2-A84A-829CD0A87C80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
