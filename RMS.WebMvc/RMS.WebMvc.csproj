@@ -197,11 +197,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712111647464_InitialCreate.cs" />
-    <Compile Include="Migrations\201712111647464_InitialCreate.Designer.cs">
-      <DependentUpon>201712111647464_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -303,11 +298,6 @@
       <Project>{704E3A34-2CA6-4402-B2CD-F5A223B53ABC}</Project>
       <Name>RMS.Services</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712111647464_InitialCreate.resx">
-      <DependentUpon>201712111647464_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
