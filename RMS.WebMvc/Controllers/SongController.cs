@@ -62,7 +62,8 @@ namespace RMS.WebMvc.Controllers
                 {
                     SongId = detail.SongId,
                     Title = detail.Title,
-                    Content = detail.Content
+                    Content = detail.Content,
+                    Link = detail.Link
                 };
 
             return View(model);

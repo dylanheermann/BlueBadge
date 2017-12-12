@@ -13,10 +13,7 @@ namespace RMS.Models
         public string Title { get; set; }
         [Required]
         public string Content { get; set; }
-
         public override string ToString() => Title;
-
-
         [Required]
         public string Link { get; set; }
     }
