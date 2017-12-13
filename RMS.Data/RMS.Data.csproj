@@ -58,6 +58,10 @@
     <Compile Include="Migrations\201712121453587_InitialMigration.Designer.cs">
       <DependentUpon>201712121453587_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712131536433_AnonymousAllowed.cs" />
+    <Compile Include="Migrations\201712131536433_AnonymousAllowed.Designer.cs">
+      <DependentUpon>201712131536433_AnonymousAllowed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SongEntity.cs" />
@@ -69,6 +73,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712121453587_InitialMigration.resx">
       <DependentUpon>201712121453587_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712131536433_AnonymousAllowed.resx">
+      <DependentUpon>201712131536433_AnonymousAllowed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

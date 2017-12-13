@@ -13,10 +13,20 @@ namespace RMS.WebMvc.Controllers
     {
         //Goal: Change SongController to be used for the Archives page.
 
+        private Guid _userId;
+
+        public SongController()
+        {
+            if (User != null)
+            {
+                _userId = Guid.Parse(User.Identity.GetUserId());
+            }
+        }
+
 
         //This controller deals with all aspects of creating, reading, editing, and deleting a Song post.
         // GET: Song
-        [Authorize]
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var service = CreateSongService();
@@ -24,6 +34,7 @@ namespace RMS.WebMvc.Controllers
             return View(model);
         }
 
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -31,6 +42,7 @@ namespace RMS.WebMvc.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create(SongCreateModel model)
         {
             if (!ModelState.IsValid) return View(model);
@@ -50,6 +62,7 @@ namespace RMS.WebMvc.Controllers
 
         }
 
+        [AllowAnonymous]
         public ActionResult Details(int id)
         {
             var service = CreateSongService();
@@ -57,6 +70,8 @@ namespace RMS.WebMvc.Controllers
             return View(model);
         }
 
+
+        [Authorize]
         public ActionResult Edit(int id)
         {
             var service = CreateSongService();
@@ -75,6 +90,7 @@ namespace RMS.WebMvc.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit(int id, SongEditModel model)
         {
             if (!ModelState.IsValid) return View(model);
