@@ -18,6 +18,10 @@ namespace RMS.Services
             _userId = userId;
         }
 
+        public SongService()
+        {
+        }
+
         public bool CreateSong(SongCreateModel model)
         {
             var entity =
@@ -61,6 +65,30 @@ namespace RMS.Services
             }
         }
 
+
+
+
+        public IEnumerable<SongListModel> GetAllSongs()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query =
+                    ctx
+                        .Songs
+                        .Select(
+                            e =>
+                                new SongListModel
+                                {
+                                    SongId = e.SongId,
+                                    Title = e.Title,
+                                    Content = e.Content,
+                                    CreatedUtc = e.CreatedUtc,
+                                    Link = e.Link
+                                }
+                        );
+                return query.ToArray();
+            }
+        }
         public SongDetailsModel GetSongById(int SongId)
         {
             using (var ctx = new ApplicationDbContext())

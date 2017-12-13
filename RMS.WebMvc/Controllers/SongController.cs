@@ -22,16 +22,19 @@ namespace RMS.WebMvc.Controllers
                 _userId = Guid.Parse(User.Identity.GetUserId());
             }
         }
-
-
+        //REMEMBER: 
+        //REMEMBER: Use Ctrl + Space when writing a line of code to see the possibilities of the remaining line.
+        //REMEMBER: Annotate thoroughly, often.
         //This controller deals with all aspects of creating, reading, editing, and deleting a Song post.
         // GET: Song
         [AllowAnonymous]
         public ActionResult Index()
+          
         {
-            var service = CreateSongService();
-            var model = service.GetSong();
+            var service = new SongService();
+            var model = service.GetAllSongs();
             return View(model);
+            
         }
 
         [Authorize]
