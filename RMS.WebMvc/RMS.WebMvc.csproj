@@ -268,9 +268,15 @@
     <Content Include="Views\Song\Delete.cshtml" />
     <Content Include="Views\Song\Edit.cshtml" />
     <Content Include="Views\Song\Details.cshtml" />
+    <Content Include="Views\SongEntities\Create.cshtml" />
+    <Content Include="Views\SongEntities\Delete.cshtml" />
+    <Content Include="Views\SongEntities\Details.cshtml" />
+    <Content Include="Views\SongEntities\Edit.cshtml" />
+    <Content Include="Views\SongEntities\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Archives\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

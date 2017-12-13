@@ -11,6 +11,10 @@ namespace RMS.WebMvc.Controllers
 {
     public class SongController : Controller
     {
+        //Goal: Change SongController to be used for the Archives page.
+
+
+        //This controller deals with all aspects of creating, reading, editing, and deleting a Song post.
         // GET: Song
         [Authorize]
         public ActionResult Index()
