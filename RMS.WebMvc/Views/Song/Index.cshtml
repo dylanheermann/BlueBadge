@@ -52,7 +52,7 @@
             @Html.DisplayFor(modelItem => item.CreatedUtc)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Link)
+            <a href="@item.Link">See Link</a>
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id = item.SongId }) |

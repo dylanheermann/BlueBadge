@@ -23,8 +23,10 @@ namespace RMS.Services
         }
 
         public bool CreateSong(SongCreateModel model)
+            //Method CreateSong is using SongCreateModel from RMS.Models and making a new model from that.
         {
             var entity =
+                //SongEntity is created and stored within entity 
                 new SongEntity()
                 {
                     OwnerId = _userId,
