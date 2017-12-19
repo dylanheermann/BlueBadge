@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.Services", "RMS.Services\RMS.Services.csproj", "{704E3A34-2CA6-4402-B2CD-F5A223B53ABC}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.Contracts", "RMS.Contracts\RMS.Contracts.csproj", "{FE6FDC2C-23B2-46B2-A84A-829CD0A87C80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.WebMvc", "RMS.WebMvc\RMS.WebMvc.csproj", "{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMS.API", "RMS.API\RMS.API.csproj", "{CAED3A3C-F5D9-4A1C-BAD5-F75B58E88C01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A127C0D-9F80-49AE-9D7C-A755C0322DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAED3A3C-F5D9-4A1C-BAD5-F75B58E88C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAED3A3C-F5D9-4A1C-BAD5-F75B58E88C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAED3A3C-F5D9-4A1C-BAD5-F75B58E88C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAED3A3C-F5D9-4A1C-BAD5-F75B58E88C01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

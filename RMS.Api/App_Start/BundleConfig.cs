@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace RMS.Api
+namespace RMS.API
 {
     public class BundleConfig
     {

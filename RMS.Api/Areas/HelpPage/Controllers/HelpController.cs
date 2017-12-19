@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using RMS.Api.Areas.HelpPage.ModelDescriptions;
-using RMS.Api.Areas.HelpPage.Models;
+using RMS.API.Areas.HelpPage.ModelDescriptions;
+using RMS.API.Areas.HelpPage.Models;
 
-namespace RMS.Api.Areas.HelpPage.Controllers
+namespace RMS.API.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

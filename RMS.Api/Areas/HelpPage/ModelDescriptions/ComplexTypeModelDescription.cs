@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace RMS.Api.Areas.HelpPage.ModelDescriptions
+namespace RMS.API.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

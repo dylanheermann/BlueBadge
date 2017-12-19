@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace RMS.Api.Areas.HelpPage
+namespace RMS.API.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

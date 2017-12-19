@@ -8,11 +8,10 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using RMS.Api.Providers;
-using RMS.Api.Models;
-using RMS.Data;
+using RMS.API.Providers;
+using RMS.API.Models;
 
-namespace RMS.Api
+namespace RMS.API
 {
     public partial class Startup
     {

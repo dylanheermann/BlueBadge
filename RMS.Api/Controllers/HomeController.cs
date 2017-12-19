@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace RMS.Api.Controllers
+namespace RMS.API.Controllers
 {
     public class HomeController : Controller
     {

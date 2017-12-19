@@ -12,6 +12,12 @@ using RMS.WebMvc.Models;
 
 namespace RMS.WebMvc.Controllers
 {
+    //Adding SSL to the app
+
+        #if !DEBUG
+		[RequireHttps]
+        #endif
+
     [Authorize]
     public class AccountController : Controller
     {

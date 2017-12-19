@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using RMS.Api.Areas.HelpPage.ModelDescriptions;
+using RMS.API.Areas.HelpPage.ModelDescriptions;
 
-namespace RMS.Api.Areas.HelpPage.Models
+namespace RMS.API.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

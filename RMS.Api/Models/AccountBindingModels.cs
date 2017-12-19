@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace RMS.Api.Models
+namespace RMS.API.Models
 {
     // Models used as parameters to AccountController actions.
 

@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace RMS.Api.Controllers
+namespace RMS.API.Controllers
 {
     [Authorize]
     public class ValuesController : ApiController

@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1EA1AC57-28A7-4646-B89D-A5BD670699C8}</ProjectGuid>
+    <ProjectGuid>{CAED3A3C-F5D9-4A1C-BAD5-F75B58E88C01}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RMS.Api</RootNamespace>
-    <AssemblyName>RMS.Api</AssemblyName>
+    <RootNamespace>RMS.API</RootNamespace>
+    <AssemblyName>RMS.API</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -24,6 +24,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -235,6 +236,7 @@
     </Compile>
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -242,6 +244,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -318,14 +322,6 @@
       <Project>{e21e2ac7-202d-4382-b898-6d543aee0faa}</Project>
       <Name>RMS.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RMS.Models\RMS.Models.csproj">
-      <Project>{002f5608-238d-4cc7-8e28-875489d24d56}</Project>
-      <Name>RMS.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RMS.Services\RMS.Services.csproj">
-      <Project>{704e3a34-2ca6-4402-b2cd-f5a223b53abc}</Project>
-      <Name>RMS.Services</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -343,7 +339,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>62400</DevelopmentServerPort>
+          <DevelopmentServerPort>50310</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:62400/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
