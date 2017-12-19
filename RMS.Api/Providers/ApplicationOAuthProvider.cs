@@ -10,6 +10,7 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using RMS.API.Models;
+using RMS.Data;
 
 namespace RMS.API.Providers
 {

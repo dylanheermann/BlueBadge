@@ -16,6 +16,7 @@ using Microsoft.Owin.Security.OAuth;
 using RMS.API.Models;
 using RMS.API.Providers;
 using RMS.API.Results;
+using RMS.Data;
 
 namespace RMS.API.Controllers
 {
