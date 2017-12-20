@@ -6,6 +6,10 @@ using System.Net.Http;
 using System.Web.Http;
 
 namespace RMS.API.Controllers
+
+    //Controller does the routing.
+    //When I go to /api/values:
+    //controller is not read. just Values
 {
     [Authorize]
     public class ValuesController : ApiController
